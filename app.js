@@ -3,7 +3,9 @@
 // const obj = require("./sum.js");
 
 // Object de-structuring on the fly 
-const {calculateSum, multiply} = require("./sum.js")
+// const {calculateSum, multiply} = require("./sum.js")
+
+import { calculateSum , multiply } from "./sum.js";
 
 
 // -------------------- EPISODE 3-----------------------------------------------------
@@ -33,6 +35,7 @@ console.log(global === globalThis); // true
 
 
 // ---------------------------------------------EPISODE 4 ----------------------------------------
+
 
 
 
