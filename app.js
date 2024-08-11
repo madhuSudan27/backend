@@ -4,8 +4,16 @@
 
 // Object de-structuring on the fly 
 // const {calculateSum, multiply} = require("./sum.js")
+// import { calculateSum , multiply } from "./sum.js";
 
-import { calculateSum , multiply } from "./sum.js";
+
+// const {calculateSum} = require("./calculate/sum");
+// const {calculateMultiply} = require("./calculate/multiply");
+
+
+// lets import the folder 
+
+const {calculateSum, calculateMultiply } = require("./calculate/index");
 
 
 // -------------------- EPISODE 3-----------------------------------------------------
@@ -43,7 +51,7 @@ const a = 10;
 const b = 20;
 
 calculateSum(a,b);
-multiply(a,b);
+calculateMultiply(a,b);
 
 
 
