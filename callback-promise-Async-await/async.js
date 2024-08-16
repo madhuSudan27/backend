@@ -51,4 +51,22 @@ async function handlePromise(){
     console.log("--------Resolved data1");
     console.log(data2);
 }
-handlePromise();
+// handlePromise();
+
+const URL = "https://api.githuhfgb.com/users/madhuSudan27";
+
+async function fetchData(){
+
+    try{
+        const userData = await fetch(URL);
+    
+        const jsonData = await userData.json();
+        console.log(jsonData);
+    }
+    catch(err){
+        console.error(err);
+    }
+
+}
+
+fetchData();
